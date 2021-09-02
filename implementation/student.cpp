@@ -33,22 +33,23 @@ void Student::get_data(){
 
     std::string temp;
 
-    printer(5);std::cout<<"Enter Student Name : ";
+    printer(5,1);std::cout <<"------------------------------------------\n";
+    printer(5,1);std::cout<<"Enter Student Name : ";
     std::getline(std::cin,temp);
     strcpy(this->name,temp.c_str());
 
-    printer(5);std::cout<<"Enter DoB in YYYY-MM-DD : ";
+    printer(5,1);std::cout<<"Enter DoB in YYYY-MM-DD : ";
     std::getline(std::cin,temp);
     strcpy(this->dob,temp.c_str());
     
-    printer(5);std::cout<<"Enter Email : ";
+    printer(5,1);std::cout<<"Enter Email : ";
     std::getline(std::cin,temp);
     strcpy(this->email,temp.c_str());
 
-    printer(5);std::cout<<"Enter ID : ";
+    printer(5,1);std::cout<<"Enter ID : ";
     std::cin>>this->id;
 
-    printer(5);std::cout<<"Enter Mobile Number : ";
+    printer(5,1);std::cout<<"Enter Mobile Number : ";
     std::cin>>this->mobile;
 
     getchar();

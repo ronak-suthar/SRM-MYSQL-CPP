@@ -14,6 +14,7 @@ void printer(int a,int b){
 void menu(sql_db &db)
 {   
     system("clear");
+
     printer(5);std::cout<<"___________                                            ___________\n";
     printer(5);std::cout<<"           \\Welcome to Student Record Managment System/\n";
     
@@ -31,6 +32,7 @@ void menu(sql_db &db)
 
     getchar();
 
+    system("clear");
     switch (choice)
     {
     case 1:
@@ -47,6 +49,9 @@ void menu(sql_db &db)
     case 4:
 
         int update_choice;
+
+        
+        printer(5,1);std::cout <<"------------------------------------------\n";
         printer(5,1);std::cout << "Choose a field that you want to update\n";
         printer(5,1);std::cout << "1. Name\n";
         printer(5,1);std::cout << "2. DoB\n";

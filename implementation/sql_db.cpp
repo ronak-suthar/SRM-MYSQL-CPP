@@ -71,7 +71,10 @@ void sql_db::VIEW_DATA(void)
         this->res = mysql_use_result(this->conn);
 
         printer(5, 2);
+        std::cout << "The Records are as follows\n";
+        printer(5, 2);
         std::cout << "-----------------------------------------------------------------\n";
+        
 
         printer(5);
         std::cout << std::left << std::setw(20) << std::setfill(' ') << "Name";
