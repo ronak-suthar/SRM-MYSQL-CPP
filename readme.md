@@ -24,9 +24,20 @@ CREATE TABLE Student(
     g++ source/*.cpp implementation/*.cpp -L/usr/include/mysql/mysql -lmysqlclient
 ```
 
-- SnapShots of Application Features
-    -  Main Menu![Main Menu](./images/img_01.png)
-    -  Inserting Record to System ![INSERT](./images/img_02.png)
-    -  View All Records![READ](./images/img_03.png)
-    -  Delete A Record![DELETE](./images/img_04.png)
-    -  Update Data ![UPDATE](./images/img_05.png)
+-   SnapShots of Application Features
+#### Main Menu 
+![Main Menu](./images/img_01.png)
+
+#### Inserting Record to System 
+![INSERT](./images/img_02.png)
+
+#### View All Records 
+![READ](./images/img_03.png)
+
+#### Delete A Record
+![DELETE](./images/img_04.png)
+    
+#### Update Data 
+![UPDATE](./images/img_05.png)
+
+    
