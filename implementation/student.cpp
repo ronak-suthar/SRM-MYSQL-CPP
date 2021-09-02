@@ -1,6 +1,7 @@
 #include <iostream>
-#include "student.h"
-#include "sql_db.h"
+#include "../headers/student.h"
+#include "../headers/sql_db.h"
+#include "../headers/menu.h"
 #include <cstring>
 #include <string>
 #include <limits>
@@ -17,37 +18,37 @@ void Student::set_data(char usr_name[], unsigned int usr_id, unsigned int usr_mo
 
 void Student::show_data()
 {   
-    std::cout<<"________________________                   _________________________\n";
-    std::cout<<"                        \\USER DETAILS ARE/ \n";
-    std::cout << "User details are as follows : \n";
-    std::cout << "Name : " << name << "\n";
-    std::cout << "ID : " << id << "\n";
-    std::cout << "Mobile : " << mobile << "\n";
-    std::cout << "Email : " << email << "\n";
-    std::cout << "DoB : " << dob << "\n";
-    std::cout<<"--------------------------------------------------------------------\n";
+    printer(5);std::cout<<"________________________                   _________________________\n";
+    printer(5);std::cout<<"                        \\USER DETAILS ARE/ \n";
+    printer(5);std::cout << "User details are as follows : \n";
+    printer(5);std::cout << "Name : " << name << "\n";
+    printer(5);std::cout << "ID : " << id << "\n";
+    printer(5);std::cout << "Mobile : " << mobile << "\n";
+    printer(5);std::cout << "Email : " << email << "\n";
+    printer(5);std::cout << "DoB : " << dob << "\n";
+    printer(5);std::cout<<"--------------------------------------------------------------------\n";
 }
 
 void Student::get_data(){
 
     std::string temp;
 
-    std::cout<<"Enter Student Name : ";
+    printer(5);std::cout<<"Enter Student Name : ";
     std::getline(std::cin,temp);
     strcpy(this->name,temp.c_str());
 
-    std::cout<<"Enter DoB in YYYY-MM-DD : ";
+    printer(5);std::cout<<"Enter DoB in YYYY-MM-DD : ";
     std::getline(std::cin,temp);
     strcpy(this->dob,temp.c_str());
     
-    std::cout<<"Enter Email : ";
+    printer(5);std::cout<<"Enter Email : ";
     std::getline(std::cin,temp);
     strcpy(this->email,temp.c_str());
 
-    std::cout<<"Enter ID : ";
+    printer(5);std::cout<<"Enter ID : ";
     std::cin>>this->id;
 
-    std::cout<<"Enter Mobile Number : ";
+    printer(5);std::cout<<"Enter Mobile Number : ";
     std::cin>>this->mobile;
 
     getchar();

@@ -1,7 +1,7 @@
 #include<iostream>
-#include"sql_db.h"
-#include"student.h"
-#include"menu.h"
+#include"../headers/sql_db.h"
+#include"../headers/student.h"
+#include"../headers/menu.h"
 
 int main(void){
 
