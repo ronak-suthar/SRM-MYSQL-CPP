@@ -15,7 +15,7 @@ class sql_db{
     MYSQL* establish_connection(void);
     void VIEW_DATA(void);
     void INSERT_DATA(Student);
-    void UPDATE_DATA(Student);
+    void UPDATE_DATA(int);
 
     ~sql_db(void);
 };
